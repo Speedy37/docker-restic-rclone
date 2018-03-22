@@ -12,4 +12,4 @@ RUN apk add --no-cache git go musl-dev ca-certificates fuse \
  && apk del git go musl-dev \
  && echo "DONE"
 
-VOLUME ["/root/.config/rclone/"]
+VOLUME ["/root/.config/rclone/", "/root/.cache/restic/"]
